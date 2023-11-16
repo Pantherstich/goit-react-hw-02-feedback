@@ -8,6 +8,7 @@ export const Layout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 16px solid #ccc;
   border-radius: 24px;
   padding: 16px;
 `;
