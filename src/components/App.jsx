@@ -1,9 +1,7 @@
 import { Component } from 'react';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Notification } from './Notification/Notification';
 import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
-import { render } from 'react-dom';
 import { Layout } from './App.styled';
 
 export class App extends Component {
@@ -16,7 +14,7 @@ export class App extends Component {
   leaveFeedback = e => {
     this.setState(prevState => {
       return {
-        [e.target.textContent]: prevState[e.target.textContent] + 1,
+        [e]: prevState[e] + 1,
       };
     });
   };

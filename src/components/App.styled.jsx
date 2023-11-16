@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
 export const Layout = styled.div`
-  padding: 36px;
   background-color: #000000;
   color: #ffffff;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  padding: 16px;
 `;
